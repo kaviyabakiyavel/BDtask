@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import HighComp from './HighComp.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <HighComp cardCount={3}/>
     </div>
   );
 }
 
 export default App;
+
+// //create card component 
+// //<cards amount={4} />
+// //<table>
+
+//  <tbody>
+//      <tr>
+//          <td> down </td>
+//          <td> down </td>
+//          <td> down </td>
+//          <td> down </td>
+//      </tr>
+//  </tbody>
+// </table>
+
+// 1. Card component accept 4 value 
+// 2. Card as to render inside table 
+// 3. Each card is clickable text as to face up and down 
+// 4. A/C only onward as to face upwards 
